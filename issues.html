@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighborhood Issues</title>
+    <link rel="stylesheet" href="issues.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+          <nav>
+            <h1 style="color: black;font-size: 30px;font-style: oblique;">CivicTrack</h1>
+            <div class="search-profile">
+                <input type="text" placeholder="Search">
+                <div class="profile-icon"></div>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+            <h2>Neighborhood Issues</h2>
+
+            <!-- Filters -->
+            <div class="filters">
+                <div class="category-select">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="">Select Category</option>
+                        <option value="Road Maintenance">Road Maintenance</option>
+                        <option value="Waste Management">Waste Management</option>
+                        <option value="Public Safety">Public Safety</option>
+                    </select>
+                </div>
+
+                <div class="status-filters">
+                    <label><input type="checkbox"> Reported</label>
+                    <label><input type="checkbox"> In Progress</label>
+                    <label><input type="checkbox"> Resolved</label>
+                </div>
+
+                <div class="distance-filters">
+                    <button>1km</button>
+                    <button>3km</button>
+                    <button>5km</button>
+                </div>
+            </div>
+
+            <!-- Issues List -->
+            <div class="issue-list">
+                <div class="issue">
+                    <h3>Reported</h3>
+                    <div class="issue-card">
+                        <div class="issue-info">
+                            <h4>Pothole on Maple Street</h4>
+                            <p>Road Maintenance · 0.5km · Reported on 2023-08-15 · 123 Maple St</p>
+                        </div>
+                        <img src="image/Pothole.jpg" alt="Pothole on Maple Street">
+                    </div>
+                </div>
+
+                <div class="issue">
+                    <h3>In Progress</h3>
+                    <div class="issue-card">
+                        <div class="issue-info">
+                            <h4>Garbage Not Collected</h4>
+                            <p>Waste Management · 1.2km · Reported on 2023-08-10 · 456 Birch St</p>
+                        </div>
+                        <img src="image/garbage.jpg" alt="Garbage Not Collected">
+                    </div>
+                </div>
+
+                <div class="issue">
+                    <h3>Resolved</h3>
+                    <div class="issue-card">
+                        <div class="issue-info">
+                            <h4>Streetlight Outage</h4>
+                            <p>Public Safety · 2.8km · Reported on 2023-08-05 · 789 Cedar Ave</p>
+                        </div>
+                        <img src="image/streerlight.jpg" alt="Streetlight Outage">
+                    </div>
+                </div>
+
+                <div class="issue">
+                    <h3>In Progress</h3>
+                    <div class="issue-card">
+                        <div class="issue-info">
+                            <h4>Obstructions </h4>
+                            <p>Road Maintenance · 2km · Reported on 2023-08-11 · 789 Cedar Ave</p>
+                        </div>
+                        <img src="image/debries.jpg" alt="fallen trees and debris">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button>&lt;</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>10</button>
+                <button>&gt;</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

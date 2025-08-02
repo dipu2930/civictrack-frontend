@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a New Issue</title>
+    <link rel="stylesheet" href="reportissue.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CivicTrack</h1>
+            <nav>
+                <a href="dashboard.html" style="text-decoration: none;">Dashboard</a>
+                <a href="#">Issues</a>
+                <a href="#">Reports</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Report a New Issue</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Short, descriptive title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Short Description</label>
+                    <textarea id="description" name="description" placeholder="Describe the issue in detail" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select Category</option>
+                        <option>Road Maintenance</option>
+                        <option>Waste Management</option>
+                        <option>Public Safety</option>
+                        <!-- Add categories here -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="photos">Upload Photos</label>
+                    <input type="file" id="photos" name="photos" multiple>
+                    <small>Add up to 5 images to help illustrate the issue.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="anonymous-reporting">Anonymous Reporting</label>
+                    <input type="checkbox" id="anonymous-reporting" name="anonymous-reporting">
+                    <label for="anonymous-reporting">Report anonymously</label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit"><a href="issues.html">Submit Issue</a></button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

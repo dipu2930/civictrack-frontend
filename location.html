@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicTrack - Map</title>
+  <link rel="stylesheet" href="location.css">
+  
+  <!-- Include Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CivicTrack</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Map</a></li>
+        </ul>
+      </nav>
+      <div class="search-box">
+        <input type="text" placeholder="Search for an address or place" />
+        <button>Search</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="map"></div>
+    </main>
+
+    <footer>
+      <button id="report-issue"><a href ="reportissue.html">Report an Issue</a></button>
+    </footer>
+  </div>
+
+  <!-- Include Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
